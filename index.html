@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap4.min.js"></script>
+
+    <!-- Meta tags Obrigatórias -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Decor Solutions Home</title>
+    <link rel="icon" href="image/news.png">
+
+    <style>
+        /*--Formatando o a cor do texto do menu*/
+        
+		
+        .navbar-primary .navbar-nav .nav-link {
+            font-size: 1.2em;
+            color: white;
+        
+		}
+		
+		
+        
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        a:link {
+            text-decoration: none;
+        }
+        
+        a:link:hover {
+            color: black;
+            background: ;
+        }
+        /*--Formatando o a cor de quando passa o mouse em cima do texto do menu*/
+        
+        .navbar-dark .navbar-nav .nav-link:focus,
+        .navbar-primary .navbar-nav .nav-link:hover {
+            color: #F4D11C;
+        }
+        /*--Formatando a barrinha de menu quando a pagina fica pequena */
+        
+        .navbar-dark .navbar-toggler {
+            color: #F4D11C;
+            border-color: #F4D11C;
+        }
+        /*--Formatando o titulo principal pra ficar no centro*/
+        
+        .capa {
+            text-align: center;
+        }
+        
+        .btn-dark {
+            margin-top: -30%;
+            background: rgba(0, 0, 0, 0.9);
+        }
+        
+        .btn-dark:hover {
+            background: #F4D11C;
+            color: black;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: none;
+			margin-left: auto;
+			font-size: 1.2em;
+        }
+        
+        .btn-secondary:hover {
+            background: #F4D11C;
+            color: black;
+			
+        }
+		
+		.carousel-caption {
+			
+			color: white;
+			border: 1px solid #F4D11C;
+			background-color: rgba(0,0,0,0.6);
+			
+		}
+		 
+		
+		
+        
+        .btn-secondary:not(:disabled):not(.disabled).active,
+        .btn-secondary:not(:disabled):not(.disabled):active,
+        .show>.btn-secondary.dropdown-toggle {
+            background: #F4D11C;
+            color: black
+        }
+        
+        .dropdown-item:hover {
+            background: #F4D11C;
+            color: black;
+            text-decoration: none;
+        }
+        
+        .dropdown-item {
+            color: black;
+        }
+		
+		.endereco{
+			color: white;
+			font-size: 0.5em;
+		}
+		.endereco:hover{
+			
+			color: #f4d11c;
+		}
+		
+		.rodapeimg{
+			
+			margin-top: -5%;
+		}
+        /*--Formatando o titulo principal 'DECOR SOLUTIONS'*/
+        
+        h1 {
+			
+            font-weight: 370;
+            letter-spacing: 0.05em;
+            margin-bottom: 50px;
+            color: white;
+        }
+        
+        #rodape {
+            background: rgba(0,0,0,0.8);
+			border: 1px solid white;
+        }
+		
+		
+		
+		#menulateral{
+			
+			    position: fixed;
+    			display: grid;
+    			right: 0px;
+    			top: 30%;
+    			z-index: 200;
+    			text-align: right;
+    			top: 50%;
+    			transform: translate(0, -50%);
+				
+		}
+		
+		footer{
+			
+			font-size: 2em;
+			background:rgba(0,0,0,0.8); ;
+			padding: 50px 0px 20px 0px;
+			color: white;
+			position: relative;
+			
+			
+			
+			
+		}
+        
+       
+        /*ISSO AQUI É PRA QUANDO O CARA DIMINUIR O TAMANHO DO TEXTO, O TEXTO DIMINUI JUNTO*/
+        
+        @media (max-width: 575.98px) {
+            .btn-dark {
+                margin: 10px 15px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {
+            h1 {
+                font-size: 4em;
+            }
+        }
+        
+        @media (max-width: 991.98px) {
+            h1 {
+                font-size: 5em;
+            }
+        }
+        
+        @media (max-width: 1199.98px) {
+            h1 {
+                font-size: 6em;
+            }
+        }
+        
+        #nav-menu {
+            margin-left: 23%;
+        }
+		
+		
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Inicio Cabecalho -->
+        <nav class="navbar navbar-expand-md navbar-primary fixed-top navbar-trasparente">
+            <!-- AQUI FICARÁ A LOGO -->
+
+            <div class="container-fluid">
+
+                <a href="index.html" class="navbar-brand">
+                    <img src="image/logo5.png" width="200" height="130" alt="">
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+
+                    <i class="fas fa-bars text-white" ></i>
+
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-menu">
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Móveis
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                            <button class="dropdown-item" type="button"><a href="">Cozinha</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Dormitório casa</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Dormitório solteiro</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Banheiro</a></button>
+
+                            <button class="dropdown-item" type="button"><a href="">Lavabo</a></button>
+
+                            <button class="dropdown-item" type="button"><a href="">Closet</a></button>
+
+                            <button class="dropdown-item" type="button"><a href="">Área de serviço</a></button>
+
+                            <button class="dropdown-item" type="button"><a href="">Dormitório solteiro</a></button>
+
+                            <button class="dropdown-item" type="button"><a href="">Home Teatcher</a></button>
+
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Decoração
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button"><a href="contato.html">Papel de parede</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Gesso 3D</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Piso Vinilico</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Cortinas</a></button>
+
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Reforma Predial
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                            <button class="dropdown-item" type="button"><a href="contato.html">Gesso</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Piso</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Mármore e Granito</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Banheiro</a></button>
+
+                            <button class="dropdown-item" type="button"><a href="">Pintura</a></button>
+
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Móveis Soltos
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                            <button class="dropdown-item" type="button"><a href="contato.html">Cama box</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Cama box com báu</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Colchão</a></button>
+                            <button class="dropdown-item" type="button"><a href="">Sofás</a></button>
+
+                            <button class="dropdown-item" type="button"><a href="">Poltronas</a></button>
+
+                            <button class="dropdown-item" type="button"><a href="">Puffs</a></button>
+
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Energia solar
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                            <button class="dropdown-item" type="button"> <a href=""> Sobre </a> </button>
+						</div>
+                        </div>
+
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <section id="home" class="d-flex">
+
+        <div class="container align-self-center">
+            <div class="row">
+                <div class="col-md-12 capa">
+
+                    <h1><img src="image/logo5.png" width="600px" height="600px" alt=""></h1>
+
+                    <a href="contato.html" class="btn btn-lg btn-dark"> Entre em contato conosco  </a>
+
+                    <a href="projetos.html" class="btn btn-lg btn-dark">  Veja nossos projetos</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AQUI FINALIZA A PRIMEIRA PARTE DO SITE -->
+	
+	
+	<div id="menulateral">
+	
+	
+	
+	
+	
+	
+	</div>
+
+    <div>
+        <br>
+        <br>
+        
+	
+	</div>
+    <section>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <img class="d-block w-100 h-80" src="image/primeiroconteudo.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption  d-none d-md-block">
+                        <h5> Sobre a Decor Solutions </h5>
+                        <p class="qmsomos">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it <br> to make a type specimen book.  It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially <br> unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop  <br> publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="image/segundoconteudo (2).jpg" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> Reformar de cozinha ? É na Decor Solutions </h5>
+                        <p>Reformamos sua cozinha por apenas R$ 1.245 por metro</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="image/24-cozinhas-casacor-2017.jpg" alt="Terceiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> Reformar de cozinha ? É na Decor Solutions</h5>
+                        <p>Reformamos sua cozinha por apenas R$ 1.245 por metro</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+  
+	</section>
+	<br>
+	<br>
+	
+
+		<footer>
+				<div class="container-fluid">
+				<div class="row">
+				<div class="col-md-3">
+					<a href="index.html"><img class="rodapeimg" src="image/logo5.png" width="130" alt=""></a>
+				</div>
+				
+				<div class="col-md-3">
+					<h4>Endereço</h4>
+					<img src="image/map (1).png" alt="">
+					
+					<a class="endereco" href="https://www.google.com.br/maps/place/R.+Itamonte,+180+-+Vila+Nova+de+Colares,+Serra+-+ES,+29172-822/@-20.1768857,-40.20695,3a,75y,255.22h,95.99t/data=!3m6!1e1!3m4!1s-BDkvOpQ7amFZR_wGbQKXw!2e0!7i13312!8i6656!4m5!3m4!1s0xb81dc784c812f1:0x5290316fa6d928fc!8m2!3d-20.1775025!4d-40.2072703">RUA PRINCIPAL  N°1308</a>
+				</div>	
+				<div class="col-md-4">
+					<h4>Contato</h4>
+					<img src="image/icons8-telefone-30.png" alt="">
+					<a class="endereco" href=""> 27 988740756 / 27 996244463</a>
+				</div>	
+					
+				<div class="col-md-2">
+					<h4>Redes Sociais</h4>
+					
+					<a href="https://www.facebook.com" target="_blank"> <img src="image/facebook32.png" alt=""> </a>
+					<a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img src="image/instagram32.png"></a>
+					<a href="https://www.youtube.com/?gl=BR&hl=pt" target="_blank"><img src="image/youtube32.png"></a>	
+					</div>		
+					
+					
+				</div>
+				</div>
+	
+	
+	
+	
+	
+	
+		</footer>
+
+</body>
+
+</html>

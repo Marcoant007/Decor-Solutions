@@ -1,0 +1,49 @@
+/*
+* 
+* @Marco Antonio De Araujo Junior
+*/
+
+body{
+	
+	width: auto;
+	
+	background: url(../image/ruido.png), url(../image/ap3.jpg) no-repeat , fixed, linear-gradient(100deg,#b5662a,#d6650f);
+	
+	background-size:100% 100%;
+	
+	background-attachment: fixed;
+	
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+
+nav.navbar-trasparente  {
+	padding: 0;
+	background: rgba(0,0,0,0.6);
+	border: 0px 1px solid  #F4D11C;
+}
+
+html, body{
+	height: 100%;
+	
+}
+
+#home{
+	
+	background: rgba(0,0,0,0.5);
+	font-family: Arial, Helvetica, sans-serif;
+	height: 80%;
+}
+
+
+
+
+
+		
+
+
+
+
+
+
+
